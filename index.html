@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<title>Cards</title>
+	<link rel="stylesheet/less" type="text/css" href="css/normalize.less">
+	<link rel="stylesheet/less" type="text/css" href="css/cards.less">
+	<link rel="stylesheet/less" type="text/css" href="css/helpers.less">
+	
+	
+	<script data-main="js/main" src="js/libs/require.js"></script>
+	
+	<script id="indexTmpl" type="text/x-jquery-tmpl">
+    	<li class="card ${attributes.suit} ${attributes.value}"></li>
+    </script>
+	
+</head>
+<body>
+
+	<div id="cardapp">
+	
+		<div class="content">
+		
+			<ul id="deck" class="clearfix"></ul>
+		
+		</div>
+	      
+	</div>
+	
+	
+
+</body>
+</html>

@@ -1,0 +1,91 @@
+#cardapp {
+	margin: 20px;
+}
+
+.card {
+	width:167px;
+	height:244px;
+	float: left;
+	background-image:url(img/deck-sprite.png);
+	background-repeat: no-repeat;
+	margin:5px;
+	
+	@ace-xpos: 0;
+	@two-xpos: -167px;
+	@three-xpos: -335px;
+	@four-xpos: -502px;
+	@five-xpos: -670px;
+	@six-xpos: -837px;
+	@seven-xpos: -1005px;
+	@eight-xpos: -1172px;
+	@nine-xpos: -1340px;
+	@ten-xpos: -1507px;
+	@jack-xpos: -1675px;
+	@queen-xpos: -1842px;
+	@king-xpos: -2010px;
+	
+	
+	.value-positions (@ypos: 0) {
+		&.ace {
+			background-position: @ace-xpos @ypos;
+		}
+		&.two {
+			background-position: @two-xpos @ypos;
+		}
+		&.three {
+			background-position: @three-xpos @ypos;
+		}
+		&.four {
+			background-position: @four-xpos @ypos;
+		}
+		&.five {
+			background-position: @five-xpos @ypos;
+		}
+		&.six {
+			background-position: @six-xpos @ypos;
+		}
+		&.seven {
+			background-position: @seven-xpos @ypos;
+		}
+		&.eight {
+			background-position: @eight-xpos @ypos;
+		}
+		&.nine {
+			background-position: @nine-xpos @ypos;
+		}
+		&.ten {
+			background-position: @ten-xpos @ypos;
+		}
+		&.jack {
+			background-position: @jack-xpos @ypos;
+		}
+		&.queen {
+			background-position: @queen-xpos @ypos;
+		}
+		&.king {
+			background-position: @king-xpos @ypos;
+		}
+	}
+	
+	&.clubs {
+		@ypos: 0;
+		.value-positions(@ypos);
+			
+	}
+	&.diamonds {
+		@ypos: -244px;
+		.value-positions(@ypos);
+			
+	}
+	&.hearts {
+		@ypos: -487px;
+		.value-positions(@ypos);
+			
+	}
+	&.spades {
+		@ypos: -730px;
+		.value-positions(@ypos);
+			
+	}
+	
+}
