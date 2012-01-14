@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<title>Cards</title>
+	
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/7col-1309px.css">
+	
+	<!-- {less} css files -->
+	<link rel="stylesheet/less" type="text/css" href="css/cards.less">
+	<!-- {less}.js -->
+	<script type="text/javascript" src="js/libs/less-min.js"></script>
+	
+	<link rel="stylesheet" type="text/css" href="css/helpers.css">
+	
+	
+	<script data-main="js/main" src="js/libs/require.js"></script>
+	
+	<script id="cardTmpl" type="text/x-jquery-tmpl">
+    	<li class="card ${attributes.suit} ${attributes.value}" style="float: left;"></li>
+    </script>
+	
+	<script id="controlsTmpl" type="text/x-jquery-tmpl">
+    	
+    </script>
+	
+	
+</head>
+<body>
+
+	<div id="cardapp" class"klondike">
+	
+		<div id="content" class="container_7">
+		
+			<!-- <ul id="deck" class="grid_7 clearfix"></ul> -->
+			
+			<div id="game-controls">
+				<span id="new-game">new game</span>
+			</div>
+			
+			<div id="game-top" class="clearfix">
+			
+				<div id="foundations" class="grid_4 alpha clearfix">
+					<ul id="foundations1" class="foundation grid_1 alpha"></ul>
+					<ul id="foundations2" class="foundation grid_1"></ul>
+					<ul id="foundations3" class="foundation grid_1"></ul>
+					<ul id="foundations4" class="foundation grid_1 omega"></ul>
+				</div>
+				<ul id="discard" class="grid_2"></ul>
+				<div id="stock" class="grid_1 omega"></div> <!-- has-card --> 
+				
+			</div>
+			
+			<div id="game-bottom" class="clearfix">
+			
+				<ul id="tableau1" class="tableau grid_1 alpha"></ul>
+				<ul id="tableau2" class="tableau grid_1"></ul>
+				<ul id="tableau3" class="tableau grid_1"></ul>
+				<ul id="tableau4" class="tableau grid_1"></ul>
+				<ul id="tableau5" class="tableau grid_1"></ul>
+				<ul id="tableau6" class="tableau grid_1"></ul>
+				<ul id="tableau7" cardcount="7" class="tableau grid_1 omega"></ul>
+				
+			</div>
+			
+		</div>
+	      
+	</div>
+	
+	
+
+</body>
+</html>

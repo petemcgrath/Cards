@@ -1,0 +1,223 @@
+/*
+	Variable Grid System.
+	Learn more ~ http://www.spry-soft.com/grids/
+	Based on 960 Grid System - http://960.gs/
+
+	Licensed under GPL and MIT.
+*/
+
+/*
+  Forces backgrounds to span full width,
+  even if there is horizontal scrolling.
+  Increase this if your layout is wider.
+
+  Note: IE6 works fine without this fix.
+*/
+
+body {
+  min-width: 1309px;
+}
+
+/* Containers
+----------------------------------------------------------------------------------------------------*/
+.container_7 {
+	margin-left: auto;
+	margin-right: auto;
+	width: 1309px;
+}
+
+/* Grid >> Global
+----------------------------------------------------------------------------------------------------*/
+
+
+.grid_1,
+.grid_2,
+.grid_3,
+.grid_4,
+.grid_5,
+.grid_6,
+.grid_7 {
+	display:inline;
+	float: left;
+	position: relative;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+
+
+.push_1, .pull_1,
+.push_2, .pull_2,
+.push_3, .pull_3,
+.push_4, .pull_4,
+.push_5, .pull_5,
+.push_6, .pull_6,
+.push_7, .pull_7 {
+	position:relative;
+}
+
+
+/* Grid >> Children (Alpha ~ First, Omega ~ Last)
+----------------------------------------------------------------------------------------------------*/
+
+.alpha {
+	margin-left: 0;
+}
+
+.omega {
+	margin-right: 0;
+}
+
+/* Grid >> 7 Columns
+----------------------------------------------------------------------------------------------------*/
+
+
+.container_7 .grid_1 {
+	width:167px;
+}
+
+.container_7 .grid_2 {
+	width:354px;
+}
+
+.container_7 .grid_3 {
+	width:541px;
+}
+
+.container_7 .grid_4 {
+	width:728px;
+}
+
+.container_7 .grid_5 {
+	width:915px;
+}
+
+.container_7 .grid_6 {
+	width:1102px;
+}
+
+.container_7 .grid_7 {
+	width:1289px;
+}
+
+
+
+
+/* Prefix Extra Space >> 7 Columns
+----------------------------------------------------------------------------------------------------*/
+
+
+.container_7 .prefix_1 {
+	padding-left:187px;
+}
+
+.container_7 .prefix_2 {
+	padding-left:374px;
+}
+
+.container_7 .prefix_3 {
+	padding-left:561px;
+}
+
+.container_7 .prefix_4 {
+	padding-left:748px;
+}
+
+.container_7 .prefix_5 {
+	padding-left:935px;
+}
+
+.container_7 .prefix_6 {
+	padding-left:1122px;
+}
+
+
+
+/* Suffix Extra Space >> 7 Columns
+----------------------------------------------------------------------------------------------------*/
+
+
+.container_7 .suffix_1 {
+	padding-right:187px;
+}
+
+.container_7 .suffix_2 {
+	padding-right:374px;
+}
+
+.container_7 .suffix_3 {
+	padding-right:561px;
+}
+
+.container_7 .suffix_4 {
+	padding-right:748px;
+}
+
+.container_7 .suffix_5 {
+	padding-right:935px;
+}
+
+.container_7 .suffix_6 {
+	padding-right:1122px;
+}
+
+
+
+/* Push Space >> 7 Columns
+----------------------------------------------------------------------------------------------------*/
+
+
+.container_7 .push_1 {
+	left:187px;
+}
+
+.container_7 .push_2 {
+	left:374px;
+}
+
+.container_7 .push_3 {
+	left:561px;
+}
+
+.container_7 .push_4 {
+	left:748px;
+}
+
+.container_7 .push_5 {
+	left:935px;
+}
+
+.container_7 .push_6 {
+	left:1122px;
+}
+
+
+
+/* Pull Space >> 7 Columns
+----------------------------------------------------------------------------------------------------*/
+
+
+.container_7 .pull_1 {
+	left:-187px;
+}
+
+.container_7 .pull_2 {
+	left:-374px;
+}
+
+.container_7 .pull_3 {
+	left:-561px;
+}
+
+.container_7 .pull_4 {
+	left:-748px;
+}
+
+.container_7 .pull_5 {
+	left:-935px;
+}
+
+.container_7 .pull_6 {
+	left:-1122px;
+}
+

@@ -1,0 +1,174 @@
+/* mixins */
+.card-dimensions() {
+	width:167px;
+	height:244px;
+}
+
+.rounded-corners (@radius: 5px) {
+  border-radius: @radius;
+  -webkit-border-radius: @radius;
+  -moz-border-radius: @radius;
+}
+
+/* ############################################### */
+
+#cardapp {
+	margin: 20px;
+}
+
+#game-controls {
+	margin-bottom: 30px;
+}
+
+#game-top {
+	margin-bottom: 40px;
+}
+
+.card {
+	.card-dimensions();
+	background-image:url(img/deck-sprite.png);
+	background-repeat: no-repeat;
+	
+	
+	@ace-xpos: 0;
+	@two-xpos: -167px;
+	@three-xpos: -335px;
+	@four-xpos: -502px;
+	@five-xpos: -670px;
+	@six-xpos: -837px;
+	@seven-xpos: -1005px;
+	@eight-xpos: -1172px;
+	@nine-xpos: -1340px;
+	@ten-xpos: -1507px;
+	@jack-xpos: -1675px;
+	@queen-xpos: -1842px;
+	@king-xpos: -2010px;
+	
+	
+	.value-positions (@ypos: 0) {
+		&.ace {
+			background-position: @ace-xpos @ypos;
+		}
+		&.two {
+			background-position: @two-xpos @ypos;
+		}
+		&.three {
+			background-position: @three-xpos @ypos;
+		}
+		&.four {
+			background-position: @four-xpos @ypos;
+		}
+		&.five {
+			background-position: @five-xpos @ypos;
+		}
+		&.six {
+			background-position: @six-xpos @ypos;
+		}
+		&.seven {
+			background-position: @seven-xpos @ypos;
+		}
+		&.eight {
+			background-position: @eight-xpos @ypos;
+		}
+		&.nine {
+			background-position: @nine-xpos @ypos;
+		}
+		&.ten {
+			background-position: @ten-xpos @ypos;
+		}
+		&.jack {
+			background-position: @jack-xpos @ypos;
+		}
+		&.queen {
+			background-position: @queen-xpos @ypos;
+		}
+		&.king {
+			background-position: @king-xpos @ypos;
+		}
+	}
+	
+	&.clubs {
+		@ypos: 0;
+		.value-positions(@ypos);
+			
+	}
+	&.diamonds {
+		@ypos: -244px;
+		.value-positions(@ypos);
+			
+	}
+	&.hearts {
+		@ypos: -487px;
+		.value-positions(@ypos);
+			
+	}
+	&.spades {
+		@ypos: -730px;
+		.value-positions(@ypos);
+			
+	}
+	
+	&.flipped {
+		background-position:-335px -973px;
+	}
+}
+
+.foundation {
+	.card-dimensions();
+	background-color: #f9f9f9;
+	.rounded-corners();
+	-webkit-box-shadow: inset 0px 0px 4px #000000; 
+	-moz-box-shadow: inset 0px 0px 4px #000000; 
+	box-shadow: inset 0px 0px 4px #000000;
+}
+
+#discard {
+	min-height:1px;
+}
+
+#stock {
+	.card-dimensions();
+	.rounded-corners();
+	-webkit-box-shadow: inset 0px 0px 4px #000000; 
+	-moz-box-shadow: inset 0px 0px 4px #000000; 
+	box-shadow: inset 0px 0px 4px #000000;
+	
+	&.has-card {
+		.rounded-corners("none");
+		background:url(img/deck-sprite.png) no-repeat -335px -973px;
+	}
+}
+
+/*
+.tableau {
+	position: relative;
+	min-height: 1px;
+	.card {
+		position: absolute;
+		left: 0;
+		
+		&.pos1 {
+			top: 40px;
+		}
+		&.pos2 {
+			top: 80px;
+		}
+		&.pos3 {
+			top: 120px;
+		}
+		&.pos4 {
+			top: 160px;
+		}
+		&.pos5 {
+			top: 200px;
+		}
+		&.pos6 {
+			top: 240px;
+		}
+		&.pos7 {
+			top: 280px;
+		}
+	}
+	
+}
+*/
