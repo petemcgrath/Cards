@@ -19,9 +19,9 @@ define([
 			},
 			
 			initialize: function() {
-		   		if(this.game === null) {
+		   		//if(this.game === null) {
 		   			this.game = new Game;
-		   		}
+		   		//}
 		    },
 			
 			render: function() {

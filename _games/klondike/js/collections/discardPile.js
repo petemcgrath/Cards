@@ -7,7 +7,9 @@ define([
   
 		var DiscardPile = Backbone.Collection.extend({
 			
-			model: Card
+			model: Card,
+			
+			nextFlip: []
 		
 		}); //end: DiscardPile
 		

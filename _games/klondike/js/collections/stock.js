@@ -15,7 +15,7 @@ define([
 			},
 			
 			update: function() {
-				console.log(this.length);
+				//console.log(this.length);
 			}
 			
 		

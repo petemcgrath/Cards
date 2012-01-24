@@ -12,15 +12,21 @@ define([
 			//cardTmpl: $("#cardTmpl").template(),
 			
 			initialize: function() {
-			  //_.bindAll(this, 'render');
-			  //this.model.bind('change', this.render);
-			  //this.model.view = this;
+			  _.bindAll(this, 'render', 'remove');
+			  this.model.bind('change', this.render);
+			  this.model.view = this;
 			},
 			
 			render: function() {
 			
 			    
-			}
+			},
+		
+		    // Remove this view from the DOM.
+		    remove: function() {
+		      $(this.el).empty();
+		      console.log("empty");
+		    }
 		
 		}); //end: FoundationView
 		

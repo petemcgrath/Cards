@@ -108,8 +108,8 @@
 			
 	}
 	
-	&.flipped {
-		background-position:-335px -973px;
+	&.face-down {
+		background-position:-335px -973px !important;
 	}
 }
 
@@ -123,23 +123,35 @@
 }
 
 #discard {
-	min-height:1px;
+	position: relative;
+	min-height: 1px;
+	.card {
+		position: absolute;
+		top: 0;
+		left: 40px;
+		&.pos1 {
+			left:160px;
+		}
+		&.pos2 {
+			left:100px;
+		}
+	}
 }
 
 #stock {
 	.card-dimensions();
+	background-color: #f9f9f9;
 	.rounded-corners();
 	-webkit-box-shadow: inset 0px 0px 4px #000000; 
 	-moz-box-shadow: inset 0px 0px 4px #000000; 
 	box-shadow: inset 0px 0px 4px #000000;
 	
 	&.has-card {
-		.rounded-corners("none");
+		/* .rounded-corners("none"); */
 		background:url(img/deck-sprite.png) no-repeat -335px -973px;
 	}
 }
 
-/*
 .tableau {
 	position: relative;
 	min-height: 1px;
@@ -168,7 +180,15 @@
 		&.pos7 {
 			top: 280px;
 		}
+		&.pos8 {
+			top: 320px;
+		}
+		&.pos9 {
+			top: 360px;
+		}
+		&.pos10 {
+			top: 400px;
+		}
 	}
 	
 }
-*/

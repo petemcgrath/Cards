@@ -17,7 +17,7 @@
 	<script data-main="js/main" src="js/libs/require.js"></script>
 	
 	<script id="cardTmpl" type="text/x-jquery-tmpl">
-    	<li class="card ${attributes.suit} ${attributes.value}" style="float: left;"></li>
+    	<li class="card face-down ${attributes.suit} ${attributes.value}"></li>
     </script>
 	
 	<script id="controlsTmpl" type="text/x-jquery-tmpl">
@@ -28,7 +28,7 @@
 </head>
 <body>
 
-	<div id="cardapp" class"klondike">
+	<div id="cardapp" class="klondike">
 	
 		<div id="content" class="container_7">
 		
@@ -46,7 +46,13 @@
 					<ul id="foundations3" class="foundation grid_1"></ul>
 					<ul id="foundations4" class="foundation grid_1 omega"></ul>
 				</div>
-				<ul id="discard" class="grid_2"></ul>
+				<ul id="discard" class="grid_2">
+					<!--
+<li class="card"></li>
+					<li class="card pos2"></li>
+					<li class="card pos1"></li>
+-->
+				</ul>
 				<div id="stock" class="grid_1 omega"></div> <!-- has-card --> 
 				
 			</div>

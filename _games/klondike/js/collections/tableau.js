@@ -7,8 +7,6 @@ define([
   
 		var Tableau = Backbone.Collection.extend({
 			
-			_position: null,
-			
 			model: Card
 			
 		}); //end: Tableau
